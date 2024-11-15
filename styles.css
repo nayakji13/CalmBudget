@@ -1,0 +1,220 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.wrapper {
+  width: 90%;
+  font-size: 16px;
+  max-width: 45em;
+  margin: 2em auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+.sub-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper h3 {
+  color: #2a9d8f;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+.container input {
+  display: block;
+  width: 100%;
+  padding: 0.8em 0.5em;
+  border: 2px solid #d3d3d3;
+  border-radius: 0.5em;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.container input:focus {
+  border-color: #2a9d8f;
+  box-shadow: 0 0 5px rgba(42, 157, 143, 0.4);
+}
+
+.total-amount-container,
+.user-amount-container {
+  background-color: #ffffff;
+  padding: 1.5em 1em;
+  border-radius: 0.4em;
+  box-shadow: 0 1em 2em rgba(42, 157, 143, 0.1);
+}
+
+.output-container {
+  background-color: #2a9d8f;
+  color: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 0.8em 1.5em rgba(42, 157, 143, 0.15);
+  margin: 2.5em 0;
+  padding: 1.5em;
+}
+
+.output-container p {
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+.output-container span {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+.submit {
+  font-size: 1em;
+  margin-top: 1em;
+  background-color: #264653;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.8em 1.5em;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit:hover {
+  background-color: #2a9d8f;
+}
+
+.list {
+  background-color: #ffffff;
+  padding: 2em 1.5em;
+  box-shadow: 0 1em 2em rgba(42, 157, 143, 0.1);
+  border-radius: 0.6em;
+}
+
+.sublist-content {
+  width: 100%;
+  border-left: 0.4em solid #264653;
+  margin-bottom: 0.8em;
+  padding: 0.8em 1em;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+}
+
+.product {
+  font-weight: 600;
+  color: #264653;
+}
+
+.amount {
+  color: #333;
+  text-align: right;
+}
+
+.icons-container {
+  width: 5em;
+  margin: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-title {
+  margin-bottom: 1.5em;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  color: #e63946;
+  font-weight: 500;
+}
+
+.edit {
+  margin-left: auto;
+}
+
+.edit,
+.delete {
+  background: transparent;
+  cursor: pointer;
+  margin-right: 1.2em;
+  border: none;
+  color: #2a9d8f;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+      font-size: 14px;
+  }
+  .sub-container {
+      grid-template-columns: 1fr;
+      gap: 1.5em;
+  }
+}
+/* Logo Container Styling */
+.logo-container {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+#app-logo {
+  max-width: 150px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0.8em 1.5em rgba(42, 157, 143, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the logo */
+#app-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1.2em 2em rgba(42, 157, 143, 0.3);
+}
+/* Style for Name Tag in Bottom Right Corner - Simpler and Calming Colors */
+.name-tag {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #4a4a4a; /* Soft gray text */
+  background-color: #e0f7fa; /* Calming light blue background */
+  padding: 8px 12px;
+  border-radius: 5px;
+  box-shadow: none; /* Removed shadow for simplicity */
+  z-index: 1000;
+  border: 1px solid #b2ebf2; /* Light border matching the background */
+}
